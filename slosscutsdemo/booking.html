@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book — Capital Barbershop (Demo)</title>
+  <title>Book — SlossCuts (Demo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,43 +11,56 @@
 <header>
   <div class="container header-inner">
     <div class="brand-wrap">
-      <div class="logo-text">CAPITAL BARBERSHOP CO.</div>
+      <div class="logo-text">SLOSSCUTS</div>
     </div>
 
     <nav>
-      <a href="/Capital-Barbershop-demo/index.html">Home</a>
-      <a href="/Capital-Barbershop-demo/services.html">Services</a>
-      <a href="/Capital-Barbershop-demo/gallery.html">Gallery</a>
-      <a href="/Capital-Barbershop-demo/about.html">About</a>
-      <a href="/Capital-Barbershop-demo/booking.html">Book</a>
+      <a href="/slosscutsdemo/index.html">Home</a>
+      <a href="/slosscutsdemo/services.html">Services</a>
+      <a href="/slosscutsdemo/gallery.html">Gallery</a>
+      <a href="/slosscutsdemo/about.html">About</a>
+      <a href="/slosscutsdemo/booking.html">Book</a>
     </nav>
   </div>
 </header>
+
 <main>
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Book Your Appointment</h2>
-        <p class="booking-copy">
-          This demo page embeds Capital Barbershop’s existing Calendly link so clients can
-          pick a day and time directly from the site.
-        </p>
+        <h2>Book an Appointment</h2>
+        <p>Demo showing how your real online booking can be plugged directly into the site.</p>
       </div>
 
       <div class="card">
-        <div class="calendly-inline-widget"
-          data-url="https://calendly.com/capital_barbershop_co/tailored_service"
-          style="min-width:320px;height:700px;">
-        </div>
+        <p class="booking-copy">
+          Below is a live booking embed using your Calendly link. Clients can pick a day and time
+          without ever leaving the site.
+        </p>
 
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly embed for SlossCuts -->
+        <iframe
+          src="https://calendly.com/slosscuts/45-1hr"
+          style="width:100%; min-height:650px; border:0;"
+          scrolling="yes">
+        </iframe>
+
+        <p style="font-size:0.8rem;margin-top:8px;color:var(--muted);">
+          If the embed ever has issues, a backup button can send clients straight to your Calendly page.
+        </p>
+
+        <a href="https://calendly.com/slosscuts/45-1hr"
+           target="_blank" rel="noopener"
+           class="btn btn-outline">
+          Open Booking in New Tab
+        </a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  Demo preview only — booking powered by Calendly.
+  Demo preview only — not the official SlossCuts website.
 </footer>
 
 </body>
